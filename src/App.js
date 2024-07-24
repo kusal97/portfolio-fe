@@ -1,13 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-import MainScreen from "./screens/MainScreen";
-import "./styles/app.scss";
+const { default: MainScreen } = require("./pages/MainScreen");
 
 function App() {
-  return (
-    <MainScreen>
-      <Routes></Routes>
-    </MainScreen>
-  );
+  return <MainScreen />;
 }
 
 export default App;
